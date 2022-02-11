@@ -38,24 +38,29 @@
         .nav-custom-link{
             color: rgba(255,255,255,.8)!important;
             font-weight: 500;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, transparent 0% );
         }
 
         .nav-custom-link:hover{
             color: rgba(255,255,255,1)!important;
-            animation-name: nav-background;
-            animation-timing-function: ease-in-out;
-            animation-duration: 0.5s;
-            animation-iteration-count: 1;
         }
 
-        @keyframes nav-background {
-            to {
-                background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, transparent 100% );
-            }
+        .nav-custom-link:after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #0087ca;
+            transform-origin: bottom center;
+            transition: transform 0.25s ease-out;
         }
 
-
+        .nav-custom-link:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom center;
+        }
     </style>
 </head>
 <body>
