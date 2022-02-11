@@ -38,13 +38,14 @@
         .nav-custom-link{
             color: rgba(255,255,255,.8)!important;
             font-weight: 500;
+            position: relative;
         }
 
         .nav-custom-link:hover{
             color: rgba(255,255,255,1)!important;
         }
 
-        a:after {    
+        .nav-custom-link:after {    
             background: none repeat scroll 0 0 transparent;
             bottom: 0;
             content: "";
@@ -56,11 +57,11 @@
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
             width: 0;
         }
-        a:hover:after { 
+        .nav-custom-link:hover:after { 
             width: 100%; 
             left: 0; 
         }
-        
+
     </style>
 </head>
 <body>
