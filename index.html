@@ -38,19 +38,18 @@
         .nav-custom-link{
             color: rgba(255,255,255,.8)!important;
             font-weight: 500;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, transparent 0% );
         }
 
         .nav-custom-link:hover{
             color: rgba(255,255,255,1)!important;
             animation-name: nav-background;
+            animation-timing-function: ease-in-out;
             animation-duration: 0.5s;
             animation-iteration-count: 1;
         }
 
         @keyframes nav-background {
-            from {
-                background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, transparent 0% );
-            }
             to {
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, transparent 100% );
             }
