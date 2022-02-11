@@ -44,23 +44,23 @@
             color: rgba(255,255,255,1)!important;
         }
 
-        .nav-custom-link:after {
-            content: '';
-            position: absolute;
-            width: 80%;
-            transform: scaleX(0);
-            height: 2px;
+        a:after {    
+            background: none repeat scroll 0 0 transparent;
             bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
             left: 50%;
-            background-color: #0087ca;
-            transform-origin: bottom center;
-            transition: transform 0.25s ease-out;
+            position: absolute;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
         }
-
-        .nav-custom-link:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom center;
+        a:hover:after { 
+            width: 100%; 
+            left: 0; 
         }
+        
     </style>
 </head>
 <body>
